@@ -9,7 +9,8 @@ networks:
 services:
   hbit-build:
     container_name: hbit-build
-    image: klakegg/hugo:alpine # Not official, but recommended by Hugo
+    build: ./web
+    image: hugo-extended
     restart: "no"
     volumes:
       - ./web:/src/app
