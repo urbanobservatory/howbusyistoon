@@ -1,0 +1,25 @@
+{
+  "name": "hbit-web",
+  "version": "1.0.0",
+  "description": "HowBusyIsToon - Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanobservatory/howbusyistoon.git"
+  },
+  "keywords": [
+    "howbusyistoon"
+  ],
+  "author": "Luke Smith <luke.smith@ncl.ac.uk> (http://smith.ac/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urbanobservatory/howbusyistoon/issues"
+  },
+  "homepage": "https://github.com/urbanobservatory/howbusyistoon#readme",
+  "devDependencies": {
+    "hugo-extended": "^0.78.1"
+  }
+}

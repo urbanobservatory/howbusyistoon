@@ -1,0 +1,33 @@
+.imageAndText{
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 3.2rem 0 3.2rem 0;
+
+  .imageAndText__image{
+    border-radius: 1rem;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: $laptop){
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+
+    .imageAndText__text{
+      flex: 3;
+      padding: 0 0 0 4rem;
+
+      p{
+        color: #1D326B;
+        font-family: europa, sans-serif;
+        font-size: 1.8rem;
+      }
+    }
+
+    .imageAndText__image{
+      border-radius: 1rem;
+      flex: 2;
+      overflow: hidden;
+    }
+  }
+}

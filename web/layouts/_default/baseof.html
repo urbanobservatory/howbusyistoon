@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Opengraph Data -->
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="" type="image/x-icon">
+
+    <!-- Start emojicom.io widget -->
+    <script>window.emojicom_widget = { campaign: "rFvh6zxdtjTTgmNksFKc" };</script>
+    <script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+    <!-- End emojicom.io widget -->
+
+    <!-- Site Resources -->
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xos0ytw.css">
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Google Analytics -->
+    <script></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="globalHeader globalHeader--{{ .Params.colour }}">
+        <div class=outer>
+          <div class="inner">
+            <nav class="mobileNav" v-bind:class="{ 'mobileNav--active' : isMobileShowing }">
+              <button class="mobileNav__exitButton" @click="isMobileShowing=false"></button>
+              <ul class="mobileNav__list">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.navigation.ByWeight }}
+                    <li class="mobileNav__list__item">
+                      <a class="mobileNav__list__item__link mobileNav__list__item__link--{{ $currentPage.Params.colour }}" href="{{ absURL .URL }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+              </ul>
+            </nav>
+            <nav class="desktopNav">
+              <span class="desktopNav__callout desktopNav__callout--{{ .Page.Params.colour }}">How Busy Is...</span>
+              <span class="desktopNav__location">Newcastle Upon Tyne</span>
+              <ul class="desktopNav__list">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.navigation.ByWeight }}
+                <li class="desktopNav__list__item">
+                  <a class='desktopNav__list__item__link {{if or ($currentPage.IsMenuCurrent "navigation" .) ($currentPage.HasMenuCurrent "navigation" .) }}desktopNav__list__item__link--active{{ end }}' href="{{ absURL .URL }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+              </ul>
+            </nav>
+            <div class="MobileNavActivation">
+              <span class="MobileNavActivation__text MobileNavActivation__text--{{ .Page.Params.colour }}">How Busy Is…</span>
+              <button class="MobileNavActivation__button" @click="isMobileShowing=true" onClick="return false;"></button>
+            </div>
+            <span class="location">Newcastle Upon Tyne</span>
+            <ul class="headerLinks">
+              <li class="headerLinks__item">
+                <a class="headerLinks__item__link" href="http://newcastle.gov.uk/services/public-health-wellbeing-and-leisure/public-health-services/coronavirus-covid-19" target="_blank">Council guidance</a>
+              </li>
+              <li class="headerLinks__item">
+                <a class="headerLinks__item__link" href="https://www.gov.uk/coronavirus?gclid=CjwKCAiAkan9BRAqEiwAP9X6UULwnfwW9PPhWLDxgcsV9SRU4xHQ4pgLU-YAy4KXFvL4EDikA-4RthoCZ10QAvD_BwE"  target="_blank">Covid compliance</a>
+              </li>
+              </li>
+            </ul>
+            <h1 class="globalHeader__title"><div v-cloak>{{ .Page.Params.header }} </div><span class="globalHeader__title__highlight"><div v-cloak>{{ .Page.Params.headerhighlight }}</div></span></h1>
+            <div class="callout" v-bind:class="calloutClass">
+             <p class="callout__copy" v-cloak>{{ .Page.Params.callout }} <strong>{{ .Page.Params.calloutsub }}</strong></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="columnLayout">
+        <div class="outer">
+          <div class="inner">
+            <section class="columnLayout_columnA">
+              <div class="emotionRating">
+                <h2 class="emotionRating__intro">How do you feel about visiting the city centre?</h2>
+                <div id="emojicom-widget-inline"></div>
+                <!-- <div class="emotionometer">
+                  <button class="emotionometer__button emotionometer__button--happy"></button>
+                  <button class="emotionometer__button emotionometer__button--tepid"></button>
+                  <button class="emotionometer__button emotionometer__button--sad"></button>
+                </div> -->
+              </div>
+              <div class="partnerLogos">
+                <img class="partnerLogos__logo" src="./assets/images/logo_ne1.png" alt="">
+                <img class="partnerLogos__logo" src="./assets/images/logo_newcastleCouncil.png" alt="">
+                <img class="partnerLogos__logo" src="./assets/images/logo_newcastleUni.png" alt="">
+                <img class="partnerLogos__logo" src="./assets/images/logo_nicData.png" alt="">
+                <img class="partnerLogos__logo" src="./assets/images/logo_urbanObservatory.png" alt="">
+                <img class="partnerLogos__logo" src="./assets/images/logo_hhl.png" alt="">
+              </div>
+            </section>
+            <section class="columnLayout_columnB">
+              {{ block "main" . }}
+              {{ end }}
+             </section>
+          </div>
+        </div>
+      </main>
+      <footer class="globalFooter"></footer>
+    </div>
+    <script src="/assets/data/carparks.js"></script>
+    <script src="/helper.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

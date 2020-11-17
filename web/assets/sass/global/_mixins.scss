@@ -1,0 +1,15 @@
+//zero button
+@mixin zero-button{
+  background-color: transparent;
+  border: 0;
+  
+  &:focus{
+    outline: none;  
+  }
+}
+
+@mixin zero-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

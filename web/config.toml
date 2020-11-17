@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "How Busy is Town"
+disableKinds = ['taxonomyTerm']
+uglyurls = true
+
+[params]
+  googleMapsKey = "not-set"

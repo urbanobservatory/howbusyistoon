@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_sad</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="66.2577949%" id="linearGradient-1">
+            <stop stop-color="#92D8F3" offset="0%"></stop>
+            <stop stop-color="#59AFE2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-busy-is-" transform="translate(-266.000000, -721.000000)">
+            <g id="icon_sad" transform="translate(266.000000, 721.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="28" cy="28" r="28"></circle>
+                <g id="Group" transform="translate(8.000000, 8.000000)">
+                    <g id="Group-10" transform="translate(-4.000000, -4.000000)">
+                        <path d="M24,48 C10.7448,48 0,37.2552 0,24 C0,10.7448 10.7448,0 24,0 C37.254,0 48,10.7448 48,24 C48,37.2552 37.254,48 24,48 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                        <path d="M18.0066,23.72496 C18.0066,25.04976 16.9314,26.12496 15.6066,26.12496 C14.2818,26.12496 13.2066,25.04976 13.2066,23.72496 C13.2066,22.40016 14.2818,21.32496 15.6066,21.32496 C16.9314,21.32496 18.0066,22.40016 18.0066,23.72496" id="Fill-4" fill="#1D326B"></path>
+                        <path d="M32.39304,26.12496 C31.06824,26.12496 29.99304,25.04976 29.99304,23.72496 C29.99304,22.40016 31.06824,21.32496 32.39304,21.32496 C33.71784,21.32496 34.79304,22.40016 34.79304,23.72496 C34.79304,25.04976 33.71784,26.12496 32.39304,26.12496 Z" id="Fill-6" fill="#1D326B"></path>
+                        <path d="M29.93976,36.84408 C28.35576,35.26008 26.24616,34.38768 23.99976,34.38768 C21.75336,34.38768 19.64376,35.26008 18.05976,36.84288 L16.36296,35.14608 C18.40056,33.10968 21.11256,31.98768 23.99976,31.98768 C26.88816,31.98768 29.60016,33.11088 31.63656,35.14728 L29.93976,36.84408 Z" id="Fill-8" fill="#1D326B"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

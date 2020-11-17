@@ -1,0 +1,24 @@
+.carParkKey{
+  background-color: rgba(86,174,228, .05);
+  border-radius: 1rem;
+  padding: 3.2rem;
+  margin: 6.4rem 0 3.2rem 0;
+
+  dl{
+    margin: 3.2rem 0 3.2rem 0;
+    
+    dt{
+      h3{
+        margin: 0;
+        text-transform: initial;
+      }
+    }
+    dd{
+      margin: 0;
+    }
+  }
+
+  .carParkKey__link{
+    margin: 0;
+  }
+}

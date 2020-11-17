@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{.Content}}
+{{ range where .Site.RegularPages "Type" "parking-post"}}
+<div class="imageAndText">
+    <div class="imageAndText__image">
+        <img src="{{ .Params.image }}" alt=""/>
+    </div>
+    <div class="imageAndText__text">
+        <h2>{{.Title}}</h2>
+        {{.Content}}
+        <a class="" href="{{ .Params.link }}">Read more</a>
+    </div>
+</div>
+{{ end }}
+{{ end }}

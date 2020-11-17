@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{.Content}}
+{{ range where .Site.RegularPages.ByWeight "Type" "safety-post"}}
+<div class="numberedText">
+    <div class="numberedText__number">
+        <img src="{{ .Params.numberimage }}" alt=""/>
+    </div>
+    <div class="numberedText__text">
+      {{.Content}}
+    </div>
+    <div class="numberedText__image">
+        <img src="{{ .Params.mainimage }}" alt=""/>
+    </div>
+    </div>
+{{ end }}
+{{ end }}

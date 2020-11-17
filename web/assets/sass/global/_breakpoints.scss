@@ -1,0 +1,66 @@
+
+// Site
+// =============================================================================
+
+// Breakpoints, based on a 16px base font size
+
+$mobile 	: 20rem;		// 320px
+$tablet		: 48rem;		// 768px
+$laptop	  : 64rem;		// 1024px
+$desktop	: 120.8rem;		// 1440px
+
+
+@mixin mobile {
+
+	@media screen and (min-width: $smallest) {
+		@content;
+	}
+}
+
+@mixin tablet {
+
+	@media screen and (min-width: $smallest-small) {
+		@content;
+	}
+}
+
+@mixin desktop {
+
+	@media screen and (min-width: $small) {
+		@content;
+	}
+}
+
+
+// BP flags
+
+@mixin bp-flag {
+
+	&:before {
+		background: $color-white;
+		bottom: 0;
+		color: $color-black;
+		content: '';
+		font-size: 12px;
+		height: 2.8em;
+		left: 0;
+		line-height: 3em;
+		opacity: .5;
+		padding: 0 1em;
+		pointer-events: none;
+		position: fixed;
+		z-index: 99999;
+
+		@include mobile {
+			content: '$smallest / 320px';
+		}
+
+		@include tablet {
+			content: '$smallest-small / 400px';
+		}
+
+		@include desktop {
+			content: '$small / 480px';
+		}
+	}
+}

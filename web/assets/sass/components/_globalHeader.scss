@@ -1,0 +1,461 @@
+.globalHeader{
+  background: #F59843;
+  padding: 4rem 3rem 4rem 3rem;
+  position: relative;
+
+  @media only screen and (min-width: $laptop){
+    padding: 4rem 0 4rem 0;
+
+    &:after{
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 2rem;
+      content: '';
+      display: block;
+      left: 20%;
+      position: absolute;
+    }
+
+    &:before{
+      background-color: #FDE9CA;
+      bottom: calc(2rem + 0.2rem);
+      content: '';
+      display: block;
+      height: .2rem;
+      left: 0;
+      position: absolute;
+      width: $span-8-12;
+    }
+  }
+}
+
+.globalHeader--orange{
+  background: #F59843;
+
+  &:before{
+    background-color: #FDE9CA;
+  }
+
+  &:after{
+    background-image: url("../../assets/images/graphic_walkingMan.svg");
+    height: 14rem;
+    width: 7.2rem;
+  }
+}
+
+.globalHeader--purple{
+  background: #78486D;
+
+  &:before{
+    background-color: #C6B3D2;
+  }
+
+  &:after{
+    background-image: url("../../assets/images/graphic_arrows.svg");
+    bottom: 2.2rem;
+    height: 7.1rem;
+    width: 18.1rem;
+  }
+}
+
+.globalHeader--green{
+  background: #00B67B;
+
+  &:before{
+    background-color: #EFF8BC;
+  }
+
+  &:after{
+    background-image: url("../../assets/images/graphic_knifeFork.svg");
+    bottom: 1.8rem;
+    height: 14.1rem;
+    width: 7.7rem;
+  }
+}
+
+.globalHeader--blue{
+  background: #55AEE4;
+
+  &:before{
+    background-color: #C3E3F4;
+  }
+
+  &:after{
+    background-image: url("../../assets/images/graphic_car.svg");
+    bottom: 2.2rem;
+    height: 6.4rem;
+    width: 17.1rem;
+  }
+}
+
+//Header title
+.globalHeader__title{
+  color: white;
+  font-family: quicksand, sans-serif;
+  margin: 0;
+
+  .globalHeader__title__highlight{
+    color: #FEE9C8;
+  }
+}
+
+//Header desktop Navigation
+.desktopNav{
+  align-items: center;
+  border: 6px solid #FDE9CA;
+  display: flex;
+  padding: 3.2rem;
+
+  .desktopNav__callout{
+    color: white;
+    font-family: europa, sans-serif;
+    font-size: 3.4rem;
+    letter-spacing: -0.65px;
+    margin: 0 0 0 -8rem;
+  }
+
+  .desktopNav__callout--orange{
+    background-color: #F59843;
+  }
+
+  .desktopNav__callout--purple{
+    background-color: #78486D;
+  }
+
+  .desktopNav__callout--green{
+    background-color: #00B67B;
+  }
+
+  .desktopNav__callout--blue{
+    background-color: #55AEE4;
+  }
+
+  .desktopNav__location{
+    color: #FDE9CA;
+    font-family: europa, sans-serif;
+    font-size: 2.2rem;
+    margin: 0 0 0 4rem;
+
+    &:before{
+      background-image: url("../../assets/images/icon_location.svg");
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      height: 1.594rem;
+      margin: 0 1.468rem 0 0;
+      width: 1.232rem;
+    }
+  }
+
+  .desktopNav__list{
+    @include zero-list;
+    display: flex;
+    margin: 0 0 0 auto;
+
+    .desktopNav__list__item{
+      margin: 0 0 0 2.4rem;
+
+      .desktopNav__list__item__link{
+        color: white;
+        cursor: pointer;
+        font-family: europa, sans-serif;
+        font-size: 14px;
+        line-height: 1.6rem;
+        opacity: 0.5;
+        transition: .25s ease;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+
+      .desktopNav__list__item__link--active{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//Header mobile Navigation
+.mobileNav{
+  background-color: white;
+  box-shadow: 0 10px 24px 0 rgba(0,0,0,0.25);
+  padding: 15rem 5rem 10rem 5rem;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  overflow: scroll;
+
+  .mobileNav__exitButton{
+    @include zero-button;
+    background-image: url("../../assets/images/icon_closeMenu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4.8rem;
+    position: absolute;
+    right: 3rem;
+    top: 5rem;
+    width: 4.8rem;
+  }
+
+  .mobileNav__list{
+    @include zero-list;
+    display: flex;
+    flex-direction: column;
+
+    .mobileNav__list__item{
+      margin: 0 0 2.4rem 0;
+
+      .mobileNav__list__item__link{
+        color: #F59843;
+        cursor: pointer;
+        font-family: europa, sans-serif;
+        font-size: 2.6rem;
+        letter-spacing: -0.28px;
+        line-height: 4rem;
+        transition: .25s ease;
+      }
+
+      .mobileNav__list__item__link--orange{
+        color: #F59843;
+      }
+
+      .mobileNav__list__item__link--purple{
+        color: #78486D;
+      }
+
+      .mobileNav__list__item__link--green{
+        color: #00B67B;
+      }
+
+      .mobileNav__list__item__link--blue{
+        color: #55AEE4;
+      }
+
+      .desktopNav__list__item__link--active{
+        opacity: 1;
+      }
+    }
+  }
+
+  .mobileNavLinks__list{
+    @include zero-list;
+
+    .mobileNavLinks__list__item{
+
+    }
+
+    .mobileNavLinks__list__item__link{
+      color: #8E98B5;
+      font-size: 1.8rem;
+      letter-spacing: -0.19px;
+      line-height: 4rem;
+    }
+  }
+}
+
+//Header mobile nav activation
+.MobileNavActivation{
+  align-items: center;
+  border: 6px solid #FDE9CA;
+  display: flex;
+  padding: 1.6rem;
+
+  .MobileNavActivation__text{
+    background-color: #F59843;
+    color: #FFFFFF;
+    font-family: europa, sans-serif;
+    font-size: 2.6rem;
+    letter-spacing: -0.5px;
+    margin: 0 0 0 -4rem;
+  }
+
+  .MobileNavActivation__text--orange{
+    background-color: #F59843;
+  }
+
+  .MobileNavActivation__text--purple{
+    background-color: #78486D;
+  }
+
+  .MobileNavActivation__text--green{
+    background-color: #00B67B;
+  }
+
+  .MobileNavActivation__text--blue{
+    background-color: #55AEE4;
+  }
+
+  .MobileNavActivation__button{
+    @include zero-button;
+    background-image: url("../../assets/images/icon_mobileNavButton.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2.4rem;
+    margin: 0 0 0 auto;
+    width: 3.2rem;
+  }
+}
+
+//Header location
+.location{
+  color: #FDE9CA;
+  display: block;
+  font-family: europa, sans-serif;
+  font-size: 2.2rem;
+
+  &:before{
+    background-image: url("../../assets/images/icon_location.svg");
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 1.594rem;
+    margin: 0 1.468rem 0 0;
+    width: 1.232rem;
+  }
+}
+
+//Header Callout
+.callout{
+  align-items: center;
+  background: rgb(239, 248, 188);
+  display: flex;
+  padding: 0.8rem;
+  width: 100%;
+  
+  .callout__copy{
+    border: 2px solid white;
+    color:white;
+    font-family: europa, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 2.4rem;
+    width: 100%;
+  }
+}
+
+.callout--red{
+  background: #FF4A51;
+}
+
+.callout--orange{
+  background: #F59843;
+}
+
+.callout--green{
+  background: #00B67B;
+}
+
+//Header Links
+.headerLinks{
+  @include zero-list;
+
+  .headerLinks__item{
+    margin: 0 0 1.1rem 0;
+  }
+
+  .headerLinks__item__link{
+    align-items: center;
+    color: white;
+    display: flex;
+    transition: .25s ease;
+
+    &:after{
+      background-image: url("../../assets/images/icon_arrow_right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      height: .6rem;
+      margin: 0 1.468rem 0 auto;
+      width: .4rem;
+    }
+
+    &:hover{
+      padding: 0 0 0 1rem;
+    }
+  }
+}
+
+
+//Header layout
+.globalHeader .outer .inner{
+  padding: 0 0 10rem 0;
+  position: relative;
+
+  .desktopNav{
+    display: none;
+  }
+
+  .mobileNav{
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: -100%;
+    transition: 1s;
+    z-index: 10;
+  }
+
+  .mobileNav--active{
+    position: fixed;
+    top: 0;
+  }
+
+  .MobileNavActivation{
+    margin: 0 0 1.6rem 0;
+  }
+
+  .location{
+    margin: 0 0 1.6rem 0;
+  }
+
+  .headerLinks{
+    display: none;
+  }
+
+  .callout{
+    bottom: -12rem;
+    position: absolute;
+  }
+
+  @media only screen and (min-width: $laptop){
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 10rem 0;
+
+    .mobileNav{
+      display: none;
+    }
+
+    .MobileNavActivation{
+      display: none;
+    }
+
+    .desktopNav{
+      display: flex;
+      flex-basis: 100%;
+      margin: 0 0 6.4rem 0;
+    }
+
+    .location{
+      display: none;
+    }  
+
+    .headerLinks{
+      display: block;
+      flex-basis: $span-3-12;
+    }
+
+    .globalHeader__title{
+      flex-basis: $span-8-12;
+      margin: 0 0 0 $span-1-12;
+    }
+    
+    .callout{
+      bottom: -9rem;
+      right: 0;
+      width: $span-8-12;
+    }
+  }
+}

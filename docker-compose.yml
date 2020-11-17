@@ -1,0 +1,38 @@
+version: "3.5"
+
+# https://docs.docker.com/compose/compose-file/
+
+networks:
+  web: # traefik network
+    external: true
+
+services:
+  hbit-build:
+    container_name: hbit-build
+    image: klakegg/hugo:alpine # Not official, but recommended by Hugo
+    restart: "no"
+    volumes:
+      - ./web:/src/app
+    working_dir: /src/app
+    environment:
+      - HUGO_PARAMS_googleMapsKey
+  hbit-frontend:
+    container_name: hbit-frontend
+    image: nginx:1-alpine # docker image
+    restart: unless-stopped
+    volumes:
+      - ./web/config/nginx.conf:/etc/nginx/conf.d/default.conf # default nginx conf
+      - ./web/public:/usr/share/nginx/html/static:ro # mapping the static content
+    networks:
+      - web #needed for traefik reverse-proxy
+    expose: # for documentation purposes
+      - 3000
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=80" # service port inside container
+      - "traefik.frontend.rule=Host:howbusyistoon.dev.${DEPLOYMENT}"
+    logging:
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"

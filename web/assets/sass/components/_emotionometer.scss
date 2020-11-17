@@ -1,0 +1,55 @@
+.emotionRating{
+  margin: 0 0 6.4rem 0;
+
+  .emotionRating__intro{
+    color: #1D326B;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin: 0;
+    opacity: 0.5;
+  }
+
+  .emotionometer{
+    align-items: flex-start;
+    background: #F1F2F5;
+    border-radius: 3.6rem;
+    display: flex;
+    height: 7.2rem;
+    justify-content: space-between;
+    padding: .8rem;
+
+    .emotionometer__button{
+      @include zero-button;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      height: 5.6rem;
+      transition: .25s ease;
+      width: 5.6rem;
+
+      &:hover{
+        transform: scale(1.1);
+      }
+
+      &:active{
+        transform: scale(0.9);
+      }
+    }
+
+    .emotionometer__button--happy{
+      background-image: url("../../assets/images/icon_happy.svg");
+    }
+
+    .emotionometer__button--tepid{
+      background-image: url("../../assets/images/icon_tepid.svg");
+    }
+
+    .emotionometer__button--sad{
+      background-image: url("../../assets/images/icon_sad.svg");
+    }
+  }
+
+  @media only screen and (min-width: $laptop){
+    margin: 0 0 8rem 0;
+  }
+}

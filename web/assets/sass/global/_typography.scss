@@ -1,0 +1,99 @@
+html, body{
+  font-family: europa, sans-serif;
+  font-size: 10px;
+  text-rendering: geometricPrecision;
+  word-break: break-word;
+}
+
+h1, .h1{
+  font-family: quicksand, sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  line-height: 4rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $laptop){
+    font-size: 5rem;
+    letter-spacing: -0.54px;
+    line-height: 56px;
+  }
+}
+
+h2, .h2{
+  color: #55AEE4;
+  font-family: europa, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $laptop){
+
+  }
+}
+
+h3, .h3{
+  color: #55AEE4;
+  font-family: europa, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  
+  @media only screen and (min-width: $laptop){
+
+  }
+
+  &.red{
+    color: red;
+  }
+
+  &.orange{
+    color: orange;
+  }
+
+  &.green{
+    color: green;
+  }
+
+  &.black{
+    color: black;
+  }
+}
+
+p{
+  color: #1D326B;
+  font-family: europa, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $laptop){
+
+  }
+}
+
+a{
+  color: #55AEE4;
+  font-family: europa, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+
+ul{
+  
+  li{
+    font-family: europa, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-decoration: none;
+  }
+}
+
+hr{
+
+}

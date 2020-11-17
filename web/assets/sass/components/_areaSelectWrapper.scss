@@ -1,0 +1,38 @@
+.areaSelectWrapper{
+  align-items: center;
+  display: flex;
+  margin: 0 0 4rem 0;
+
+  .areaSelectWrapper__label{
+    color: #1D326B;
+    font-family: europa, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin: 0 4rem 0 0;
+  }
+
+  .areaSelectWrapper__select{
+    -webkit-appearance: none;
+    background-color: #F1F2F5;
+    border: 0;
+    color: #1D326B;
+    font-size: 1.4rem;
+    height: 4rem;
+    line-height: 1.6rem;
+    padding: 0 4rem 0 1rem;
+    position: relative;
+
+    &::before{
+      background-image: url("../../assets/images/icon_arrowDown.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: .4rem;
+      left: 1rem;
+      position: absolute;
+      top: 2rem;
+      width: .6rem;
+    }
+  } 
+}

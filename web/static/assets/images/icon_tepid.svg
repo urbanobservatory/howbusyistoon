@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_tepid</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="67.4113594%" id="linearGradient-1">
+            <stop stop-color="#FFEB82" offset="0%"></stop>
+            <stop stop-color="#FED34B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-busy-is-" transform="translate(-192.000000, -721.000000)">
+            <g id="icon_tepid" transform="translate(192.000000, 721.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="28" cy="28" r="28"></circle>
+                <g id="Group" transform="translate(8.000000, 8.000000)">
+                    <g id="Group-10" transform="translate(-4.000000, -4.000000)">
+                        <path d="M48.00012,24.00036 C48.00012,37.25436 37.25412,48.00036 24.00012,48.00036 C10.74492,48.00036 0.00012,37.25436 0.00012,24.00036 C0.00012,10.74516 10.74492,0.00036 24.00012,0.00036 C37.25412,0.00036 48.00012,10.74516 48.00012,24.00036" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                        <path d="M15.6066,22.52496 C14.2818,22.52496 13.2066,21.44976 13.2066,20.12496 C13.2066,18.80016 14.2818,17.72496 15.6066,17.72496 C16.9314,17.72496 18.0066,18.80016 18.0066,20.12496 C18.0066,21.44976 16.9314,22.52496 15.6066,22.52496 Z" id="Fill-4" fill="#1D326B"></path>
+                        <path d="M32.39304,22.52496 C31.06824,22.52496 29.99304,21.44976 29.99304,20.12496 C29.99304,18.80016 31.06824,17.72496 32.39304,17.72496 C33.71784,17.72496 34.79304,18.80016 34.79304,20.12496 C34.79304,21.44976 33.71784,22.52496 32.39304,22.52496 Z" id="Fill-6" fill="#1D326B"></path>
+                        <polygon id="Fill-8" fill="#1D326B" points="17.2116 32.1912 30.7884 32.1912 30.7884 29.7912 17.2116 29.7912"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

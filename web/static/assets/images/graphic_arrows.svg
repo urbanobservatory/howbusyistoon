@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="72px" viewBox="0 0 184 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic_arrows</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-busy-is---saftey" transform="translate(-142.000000, -473.000000)" stroke-width="2">
+            <g id="graphic_arrows" transform="translate(143.137621, 474.000000)">
+                <line x1="32.8623794" y1="70" x2="146.862379" y2="70" id="Path-2" stroke="#78486D"></line>
+                <polyline id="Stroke-1" stroke="#C6B3D2" stroke-linecap="round" stroke-linejoin="round" points="146.740444 70 166.660193 50.0802516 180.015479 36.7256559 166.660193 23.3710601 143.289823 0 129.935917 13.3552859 143.862626 27.2826848 103.518648 27.2826848 103.518648 46.1686269 143.862626 46.1686269 129.935917 60.0960259 139.839201 70 40.1762775 70 50.0802516 60.0960259 36.1528527 46.1686269 76.4968304 46.1686269 76.4968304 27.2826848 36.1528527 27.2826848 50.0802516 13.3552859 36.7256559 0 13.3552859 23.3710601 2.13162821e-13 36.7256559 13.3552859 50.0802516 33.2750343 70"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

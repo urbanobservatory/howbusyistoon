@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+html, body, #map {
+  height: 50%;
+  width: 100%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+[v-cloak] { display: none; }
+
+.car-park-marker {
+  text-align: center;
+  position: relative;
+
+  img {
+    height: 60px !important;
+    width: 60px !important;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #map {
+    min-width: 0;
+    width: 100%;
+  }
+}

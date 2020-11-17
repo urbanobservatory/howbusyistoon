@@ -1,0 +1,27 @@
+.partnerLogos{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem;
+
+  .partnerLogos__logo{
+    padding: 2rem;
+    width: 50%;
+  }
+
+  @media only screen and (min-width: $tablet){
+    .partnerLogos__logo{
+      padding: 4rem;
+      width: 33.33%;
+    }
+  }
+
+  @media only screen and (min-width: $laptop){
+    .partnerLogos__logo{
+      padding: 2rem;
+      width: 50%;
+    }
+  }
+}
