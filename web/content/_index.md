@@ -9,7 +9,7 @@ headerhighlight: ""
 callout: "{{ header }} {{ headerhighlight }}"
 ---
 {{< rawhtml >}}
-<p>To see what your city center is like right now, check out our webcams below. They’re located on Northumberland Street and Grey Street and they update a still image of the video feed approximately every 5 minutes.</p>
+<p>To see what your city centre is like right now, check out our webcams below. They’re located on Northumberland Street and Grey Street and they update a still image of the video feed approximately every 5 minutes.</p>
 <h2>Northumberland Street</h2>
 <div class="videoWrapper"><img :src="videoImage1" /></div>
 <h2>Grey Street</h2>
