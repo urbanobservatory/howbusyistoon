@@ -11,8 +11,7 @@ calloutsub: " {{ callout }}"
 ---
 {{< rawhtml >}}
     <div id="map"></div>
-    <!-- <h2>Using public transport</h2>
-    <p>Travel firms across the region are offering a range of tools and advice to help you best decide how to travel into the city centre. Use the links below to find out more to help you plan your journey.</p>
+    <!-- <h2>Coming in by car</h2>
     <p>If you are traveling by car, use this helpful guide that shows the capacity and location to choose which car park to use.</p> -->
     <div class="carParkKey">
       <h2>Using public transport</h2>
