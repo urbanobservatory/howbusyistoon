@@ -83,7 +83,7 @@ var vue = new Vue({
             smoothFactor: 1
         });
         
-        line.addTo(map);
+        // line.addTo(map);
 
         var capacity = 0;
         var filled = 0;
@@ -122,7 +122,9 @@ var vue = new Vue({
         if (capacity != 0)
         {
           var perc = 100 * filled / capacity;
-          this.callout = "Car parks at " + Math.round(perc) + "% capacity."
+          // Disabled because might be misleading - LS 24 Nov 2020
+          // this.callout = "Car parks at " + Math.round(perc) + "% capacity."
+          this.callout = "Check our map below for car parking spaces."
         } else {
           this.callout = "Check our map below for car parking spaces."
         }
