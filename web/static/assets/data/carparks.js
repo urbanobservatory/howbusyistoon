@@ -1,4 +1,5 @@
 var carparks = [
+    /* Reserved for NHS staff only at present - no public use
     {
       "name": "Claremont Road",
       "address": "Claremont Road, Newcastle upon Tyne, NE2 4AA",
@@ -7,6 +8,7 @@ var carparks = [
       "capacity": 225,
       "location": [54.98243,-1.61993]
     },
+    */
     {
       "name": "Dean Street",
       "address": "Dean Street, Newcastle upon Tyne, NE1 1PG",
