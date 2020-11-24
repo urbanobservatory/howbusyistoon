@@ -13,7 +13,7 @@ calloutsub: " {{ callout }}"
     <div id="map"></div>
     <div class="carParkKey">
       <h2>Travelling by car</h2>
-      <p>If you are traveling by car, use this helpful guide that shows the capacity and location to choose which car park to use.</p>
+      <p>If you are traveling by car, use this helpful guide that shows the capacity and location of city centre car parks.</p>
       <dl>
         <dt><h3 class="black">Black</h3></dt>
         <dd><p>These car parks provide total spaces available but do not provide available parking levels.</p></dd>
