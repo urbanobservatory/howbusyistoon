@@ -83,7 +83,7 @@ var vue = new Vue({
             smoothFactor: 1
         });
         
-        line.addTo(map);
+        // line.addTo(map);
 
         var capacity = 0;
         var filled = 0;
