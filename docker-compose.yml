@@ -27,11 +27,11 @@ services:
     networks:
       - web #needed for traefik reverse-proxy
     expose: # for documentation purposes
-      - 3000
+      - 80
     labels:
       - "traefik.enable=true"
       - "traefik.port=80" # service port inside container
-      - "traefik.frontend.rule=Host:howbusyistoon.dev.${DEPLOYMENT}"
+      - "traefik.frontend.rule=Host:howbusyistoon.dev.${DEPLOYMENT},howbusyistoon.com,www.howbusyistoon.com"
     logging:
       driver: json-file
       options:
