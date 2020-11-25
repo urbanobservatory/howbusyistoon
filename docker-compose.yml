@@ -31,7 +31,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.port=80" # service port inside container
-      - "traefik.frontend.rule=Host:howbusyistoon.dev.${DEPLOYMENT},howbusyistoon.com,www.howbusyistoon.com"
+      - "traefik.frontend.rule=Host:howbusyistoon.dev.${DEPLOYMENT},howbusyistoon.com"
     logging:
       driver: json-file
       options:
