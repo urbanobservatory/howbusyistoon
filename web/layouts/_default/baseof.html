@@ -38,9 +38,27 @@
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- Google Analytics -->
-    <script></script>
+   <!--<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>-->
+   <!-- Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GNBNTJ89H"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('consent', 'default', {
+       'ad_storage': 'denied',
+       'client_storage': 'none'
+     });
+     gtag('config', 'G-6GNBNTJ89H', {
+       'anonymize_ip': true,
+       'allow_google_signals': false,
+       'cookie_expires': 1,
+       'cookie_update': false,
+       'storage': 'none',
+       'client_storage': 'none',
+       'client_id': Math.random() * 10000000000000000 // We don't track users... random IDs
+     });
+   </script>
   </head>
   <body>
     <div id="app">
