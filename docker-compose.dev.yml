@@ -13,6 +13,20 @@ services:
     working_dir: /src/app
     environment:
       - HUGO_PARAMS_googleMapsKey
+  hbit-update:
+    container_name: hbit-update
+    restart: unless-stopped
+    build: ./data
+    image: hbit-update
+    volumes:
+      - ./web/public:/usr/src/app/out:rw
+    logging:
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"
+    depends_on:
+      - hbit-build
   hbit-frontend:
     container_name: hbit-frontend
     image: nginx:1-alpine # docker image

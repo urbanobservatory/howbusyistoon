@@ -27,11 +27,11 @@ var vue = new Vue({
       },
       getCityState: async function() {
         return await axios
-          .get('https://nccfootfallparking.blob.core.windows.net/api-data/latest_city_state.json');
+          .get('/ncc-city-state.json');
       },
       getParking: async function() {
         return await axios
-          .get('https://nccfootfallparking.blob.core.windows.net/api-data/latest_car_parks.json');
+          .get('/ncc-car-parks.json');
       },
       setHeaderText: function(data)
       {
