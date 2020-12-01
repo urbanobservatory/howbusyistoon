@@ -6,4 +6,4 @@ numberimage: /assets/images/graphic_02.svg
 mainimage: /assets/images/uploads/masks.jpg
 weight: 2
 ---
-If you’re visiting the city centre it’s important that you wear a face covering if you are using public transport or you are in shops, banks or other indoor spaces.
+If you're visiting the city centre it's important that you wear a face covering if you are using public transport or you are in shops, banks or other indoor spaces.
