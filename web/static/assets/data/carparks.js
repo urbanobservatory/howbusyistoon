@@ -33,6 +33,7 @@ var carparks = [
       "capacity": 497,
       "location": [54.97598,-1.61540]
     },
+    /* Questions about the reliability of the sensors on this car park - could be misleading
     {
       "name": "Ellison Place",
       "address": "Ellison Place, Newcastle upon Tyne, NE1 8XS",
@@ -41,6 +42,7 @@ var carparks = [
       "capacity": 126,
       "location": [54.97606,-1.60804]
     },
+    */
     {
       "name": "Fenkle Street",
       "address": "Fenkle Street Car Park, 2-8 Fenkle Street, Newcastle upon Tyne NE1 5XN",
