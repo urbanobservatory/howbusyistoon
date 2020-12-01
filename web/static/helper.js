@@ -36,15 +36,15 @@ var vue = new Vue({
       setHeaderText: function(data)
       {
           if(data.state.city_state === 'busy') {
-            this.header = 'Lots of people are visiting the city centre right now.';
+            this.header = 'Based on Northumberland Street data lots of people are visiting the city centre right now.';
             this.headerhighlight = 'You may find social distancing easier at a different time.';
             this.calloutClass = "callout--red";
           } else if (data.state.city_state === 'average') {
-            this.header = 'People are out and about in the city centre right now.';
+            this.header = 'Based on Northumberland Street data people are out and about in the city centre right now.';
             this.headerhighlight = 'Social distancing is possible in many areas but not all.';
             this.calloutClass = "callout--orange";
           } else {
-            this.header = 'There are not many people in the city centre right now.';
+            this.header = 'Based on Northumberland Street data there are not many people in the city centre right now.';
             this.headerhighlight = 'Social distancing should be easy.';
             this.calloutClass = "callout--green";
           }

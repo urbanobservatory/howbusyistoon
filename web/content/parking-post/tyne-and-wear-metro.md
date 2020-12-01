@@ -5,4 +5,4 @@ link: https://www.nexus.org.uk/metro
 image: /assets/images/uploads/metro.jpg
 date: 2020-11-09T18:55:57.434Z
 ---
-Metro is running to a normal timetable on weekdays up until about 8.00pm when the frequency reduces to a half hourly service.  At weekends the normal weekend timetable is in operation.
+Metro is running a winter timetable with trains operating through Newcastle city centre around every seven minutes during in the day on weekdays, every 12 minutes on Saturdays and every 15 minutes on Sundays. Frequency is reduced during evenings. Passengers are advised to check train times before travelling.
