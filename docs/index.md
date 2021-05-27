@@ -1,9 +1,9 @@
-# HowBusyIsToon: Getting started
+# Getting started
 
 * TOC
 {:toc}
 
-## Section 1: What is HowBusyIsToon.com and how can it help to meet your user needs?
+## What is HowBusyIsToon.com and how can it help to meet your user needs?
 
 ### What is HowBusyIsToon (HBIT)?
 
@@ -23,7 +23,7 @@ The user research undertaken by Hedgehog Lab reached far and wide – you can se
 
 HBIT has a range of different features outlined below.  You can use the flow chart below to help identify where HBIT might closely align with the user needs and technical capabilities you have.
 
-__Insert flowchart__
+_Insert flowchart_
 
 ### Features
 
@@ -36,7 +36,7 @@ __Insert flowchart__
 | Webpage showing how busy and area is and information on public transport and parking | [Code available](https://github.com/urbanobservatory/HowBusyIsToon) for webpage layout and structure.	| • You will need a server or hosting for the webpage and to provide content relevant for your area.<br> • You may need access to real time information from sensors (for example on parking availability) if you want to share this. |
 | User feedback collection using Emojicom and Microsoft Forms | Allow users to provide quick and easy feedback on how useful the site is using emojis and/or further comments or suggestions using a web form. | • You will need an [Emojicom account](https://emojicom.io/) for the usefulness feedback feature and a way of collecting more detailed feedback - for example [Microsoft Forms](https://forms.office.com/) or [Google Forms](https://www.google.com/forms/about/). |
 
-## Section 2: Technical information on deploying HowBusyIsToon
+## Technical information on deploying HowBusyIsToon
 
 ### I already have existing CCTV cameras – how do I get started? 
 
@@ -87,7 +87,7 @@ Each page of the website has a file in the content directory. The page titles an
 
 Details like the menus can be changed in the same way as the content of the pages but it’s a little harder to change details like the fonts and text sizes. These are described in a series of [SASS](https://sass-lang.com/) files in the [assets directory](https://github.com/urbanobservatory/howbusyistoon). Most web developers will be familiar with this format.
 
-## Section 3: What are my next steps?
+## What are my next steps?
 
 You’ve used the flow chart to consider the user needs for your locality and you understand the technical deployment steps required. 
 
