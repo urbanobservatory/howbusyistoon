@@ -23,7 +23,7 @@ The user research undertaken by Hedgehog Lab reached far and wide – you can se
 
 HBIT has a range of different features outlined below.  You can use the flow chart below to help identify where HBIT might closely align with the user needs and technical capabilities you have.
 
-_Insert flowchart_
+![Flowchart for getting started](./guide-flowchart.svg)
 
 ### Features
 
@@ -62,7 +62,7 @@ Operating a camera in a public space that views pedestrians and their activity i
 
 The cameras we use in Newcastle provide the website with a regular still image, but are also used by a system that undertakes pedestrian counting using computer vision and machine learning. This allows us to generate a traffic light status which we share on the site. On our website, the information is transmitted back to the Urban Observatory and the website is automatically updated using the data collected. The footage is not routinely monitored. More information is available for Newcastle’s setup in the [Urban Observatory's privacy statement](https://urbanobservatory.ac.uk/privacy-policy). Your own implementation may vary however, depending on the setup of your network.
 
-In your city, town, or location you can use HBIT with or without the pedestrian counting technology. Any camera deployment monitoring a public space is likely to require you to complete a [Data Protection Impact Assessment (DPIA)](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/). [This template](#) might be a useful starting point.
+In your city, town, or location you can use HBIT with or without the pedestrian counting technology. Any camera deployment monitoring a public space is likely to require you to complete a [Data Protection Impact Assessment (DPIA)](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/). [This template](./guide-dpia.docx) might be a useful starting point.
 
 The Information Commissioner’s Office offers further guidance on the steps you need to take to comply with the legislation and prepare the DPIA. Your organisation’s data protection officer will likely need to review and approve this before you can proceed.
 
@@ -106,7 +106,9 @@ If you intend to incorporate CCTV images you will need to know both who has resp
 
 ### Technical capacity 
 
-#### Web developer (with knowledge of HTML and Markdown to change the content, and CSS to change the overall look and feel)
+#### Web developer
+
+The developer should have knowledge of HTML and Markdown to change the content, and CSS to change the overall look and feel.
 
 You will need someone who is competent in taking the information from GitHub and making this a reality for your location.  This might also involve changing the overall look and feel to fit with any pre-existing site location.  Most corporate ICT teams have someone with these skills.  
 
