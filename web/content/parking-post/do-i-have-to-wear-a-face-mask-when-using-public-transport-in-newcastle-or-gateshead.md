@@ -2,8 +2,13 @@
 type: parking-post
 title: Do I have to wear a face mask when using public transport in   Newcastle
   or Gateshead?
-link: https://newcastlegateshead.com/coronavirus/do-i-need-to-wear-a-face-mask-in-newcastlegateshead
+link: https://www.nexus.org.uk/covid-secure
 image: /assets/images/uploads/masks.jpg
 date: 2020-11-09T18:56:44.471Z
 ---
-Government guidelines state that it is a legal requirement to wear a face mask or sufficient covering like a scarf, if you are using public transport in England. A face covering is a covering of any type which covers your nose and mouth. Wearing a face mask or covering will be a condition of travel. Not wearing one could lead to a fine and you can be refused travel. This applies to everyone using buses, trains, Tyne and Wear Metro and ferries.
+Government guidance is changing on 19th July as England moves to Step 4 of the roadmap. Everyone should be cautious 
+whilst managing the risks as cases of COVID-19 remain high.  You should check locally as some providers may still 
+request that you wear a face covering while using public transport.  Nexus have confirmed (15 July 2021) that
+passengers must continue to use a face mask on the Tyne and Wear Metro.  You should also wear face coverings when 
+inside bus stations and interchanges or travelling on the Shields Ferry. 
+
