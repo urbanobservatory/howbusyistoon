@@ -6,4 +6,7 @@ numberimage: /assets/images/graphic_02.svg
 mainimage: /assets/images/uploads/masks.jpg
 weight: 2
 ---
-If you're visiting the city centre it's important that you wear a face covering if you are using public transport or you are in shops, banks or other indoor spaces.
+Government guidance is changing on 19th July as England moves to Step 4 of the roadmap. Everyone should 
+be cautious whilst managing the risks as cases of COVID-19 remain high.  You should check locally as 
+some organisations may still request that you wear a face covering while using public transport or 
+you are in shops, banks or other indoor spaces.
