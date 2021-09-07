@@ -16,7 +16,7 @@ CARPARKS_API_URL = 'https://api.newcastle.urbanobservatory.ac.uk/api/v2/sensors/
 FOOTFALL_SENSOR_NAMES = ['PER_PEOPLE_NORTHUMERLAND_LINE_LONG_DISTANCE_HEAD_0', 'PER_PEOPLE_NORTHUMERLAND_LINE_LONG_DISTANCE_HEAD_1']
 FOOTFALL_API_URL = "https://newcastle.urbanobservatory.ac.uk/api/v1.1/sensors/{sensor_name}/data/json/?starttime={start_time}&endtime={end_time}" 
 ACTIVITY_LEVELS = ['quiet', 'average', 'busy']
-
+ACTIVITY_THRESHOLDS = [60,175]
 # Assert an output directory exists
 if not os.path.exists('out'):
     os.makedirs('out')
@@ -144,9 +144,9 @@ def get_city_activity(footfall): # todo record for easier mod
         # else: log problem todo
     logging.info(f"total_footfall: {total_footfall}; len(footfall): {len(footfall)}")
     total_footfall = total_footfall / len(footfall)
-    if total_footfall < 25:
+    if total_footfall < ACTIVITY_THRESHOLDS[0]:
         return(ACTIVITY_LEVELS[0])
-    elif total_footfall < 100:
+    elif total_footfall < ACTIVITY_THRESHOLDS[1]:
         return(ACTIVITY_LEVELS[1])
     return(ACTIVITY_LEVELS[2])
 
