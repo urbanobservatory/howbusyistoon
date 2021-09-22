@@ -61,10 +61,16 @@ def extract_footfall(sensor_name, response):
 
     # check that UO returned some data
     if len(tmp['sensors'][0]['data']) > 0:
-        for record in tmp['sensors'][0]['data']['Walking North']:
-            footfall_all.append(record['Value'])
-        for record in tmp['sensors'][0]['data']['Walking South']:
-            footfall_all.append(record['Value'])
+        try:
+            for record in tmp['sensors'][0]['data']['Walking North']:
+                footfall_all.append(record['Value'])
+            for record in tmp['sensors'][0]['data']['Walking South']:
+                footfall_all.append(record['Value'])
+        except:
+            for record in tmp['sensors'][0]['data']['Walking Up']:
+                footfall_all.append(record['Value'])
+            for record in tmp['sensors'][0]['data']['Walking Down']:
+                footfall_all.append(record['Value'])
     else:
         # end early - no datapoints returned; don't return 0 as activity level
         return(out)
