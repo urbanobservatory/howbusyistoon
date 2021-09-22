@@ -14,10 +14,11 @@ LOCAL_DEV = False # todo - setup testing/production pipelines; not this hack
 CARPARKS_NAMES = ['Eldon%20Square', 'Claremont%20Road', 'Dean%20Street', 'Eldon%20Garden', 'Ellison%20Place', 'Grainger%20Town', 'Manors']
 CARPARKS_API_URL = 'https://api.newcastle.urbanobservatory.ac.uk/api/v2/sensors/entity?metric="Occupied%20spaces"&name="{car_park}"'
 #FOOTFALL_SENSOR_NAMES = ['PER_PEOPLE_NORTHUMERLAND_LINE_LONG_DISTANCE_HEAD_0', 'PER_PEOPLE_NORTHUMERLAND_LINE_LONG_DISTANCE_HEAD_1']
-FOOTFALL_SENSOR_NAMES = ['PER_PEOPLE_FENWICK-SAVILLE_NORTHUMBERLANDSOUTH-TO-NORTHUMBERLANDNORTH']
+FOOTFALL_SENSOR_NAMES = ['PER_PEOPLE_GREYST-THEATRESOUTH_NORTHWEST-TO-SOUTHWEST','PER_PEOPLE_GREYST-THEATRESOUTH_NORTHEAST-TO-SOUTHEAST']
 FOOTFALL_API_URL = "https://newcastle.urbanobservatory.ac.uk/api/v1.1/sensors/{sensor_name}/data/json/?starttime={start_time}&endtime={end_time}" 
 ACTIVITY_LEVELS = ['quiet', 'average', 'busy']
-ACTIVITY_THRESHOLDS = [60,175]
+ACTIVITY_THRESHOLDS = [60/3,175/3]
+
 # Assert an output directory exists
 if not os.path.exists('out'):
     os.makedirs('out')
